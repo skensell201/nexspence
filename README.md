@@ -48,7 +48,7 @@ It exposes the full **Sonatype Nexus v1 REST API** at `/service/rest/v1/` for dr
                     └────────────────────────────────────────────────┘
 ```
 
-View the [interactive architecture diagram](https://skensell201.github.io/nexspence/docs/) →
+View the full site with interactive architecture diagram, install guide, and comparison: **[nexspence.online](https://nexspence.online)** →
 
 ---
 

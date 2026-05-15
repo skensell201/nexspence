@@ -178,6 +178,48 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 .dnum{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;color:#fff;flex-shrink:0}
 .dt{font-size:.9rem;font-weight:700;margin-bottom:3px}
 .dd{font-size:.78rem;color:var(--dim);line-height:1.6}
+/* Deploy tabs */
+.dl-card{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:linear-gradient(135deg,rgba(59,130,246,.1),rgba(139,92,246,.07));border:1px solid rgba(59,130,246,.3);border-radius:12px;padding:20px 24px;margin-bottom:24px}
+.dl-card-left{display:flex;align-items:center;gap:14px}
+.dl-icon{font-size:2rem;line-height:1}
+.dl-title{font-size:.95rem;font-weight:700;margin-bottom:3px}
+.dl-sub{font-size:.76rem;color:var(--dim)}
+.dl-sub code{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--cyan);background:rgba(6,182,212,.1);padding:1px 5px;border-radius:4px}
+.qs-tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
+.qt{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:var(--glass);border:1px solid var(--border);color:var(--dim);font-size:.8rem;font-weight:600;cursor:pointer;font-family:'Inter',system-ui,sans-serif;transition:all 180ms}
+.qt:hover{background:var(--glasm);color:var(--text);border-color:var(--borhi)}
+.qt.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.qt svg{flex-shrink:0}
+.dtab{display:block}.dtab-hide{display:none}
+.qs-steps{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.qs-step{display:flex;gap:12px;padding:12px 16px;border-radius:8px;background:var(--glass);border:1px solid var(--border)}
+.sn{font-size:.62rem;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--blue);min-width:22px;margin-top:2px}
+.st{font-size:.85rem;font-weight:700;margin-bottom:2px}
+.sd{font-size:.74rem;color:var(--dim);line-height:1.55}
+.sd code{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--glasm);padding:1px 4px;border-radius:3px;color:var(--cyan)}
+.cb-wrap{background:rgba(0,0,0,.5);border:1px solid rgba(59,130,246,.18);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.cb-bar{display:flex;align-items:center;justify-content:space-between;padding:7px 14px;background:rgba(255,255,255,.025);border-bottom:1px solid rgba(59,130,246,.1)}
+.cb-bar span{font-size:.64rem;font-weight:600;color:var(--faint);font-family:'JetBrains Mono',monospace}
+.cb-bar button{font-size:.65rem;padding:3px 10px;border-radius:4px;background:transparent;border:1px solid var(--border);color:var(--dim);cursor:pointer;font-family:'Inter',system-ui,sans-serif;transition:all 150ms}
+.cb-bar button:hover{background:var(--glasm);color:var(--text)}
+.cb-body{padding:14px 16px;font-family:'JetBrains Mono',monospace;font-size:.74rem;line-height:1.85;overflow-x:auto;color:var(--dim)}
+.cb-body .cp{color:var(--blue);user-select:none}.cb-body .cc{color:var(--faint)}.cb-body .cu{color:var(--cyan);text-decoration:underline}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:6px;background:var(--glass);border:1px solid var(--border);color:var(--dim);font-size:.73rem;font-weight:600;cursor:pointer;font-family:'Inter',system-ui,sans-serif;transition:all 150ms}
+.chip:hover{background:var(--glasm);color:var(--text);border-color:var(--borhi)}
+.chip.active{background:rgba(59,130,246,.15);color:var(--blue);border-color:rgba(59,130,246,.4)}
+.helm-chip.on{background:rgba(139,92,246,.15);color:var(--purple);border-color:rgba(139,92,246,.4)}
+.dc-panel{overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.16,1,.3,1)}
+.dc-panel.open{max-height:400px}
+.dc-panel-inner{padding:16px;background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:10px;margin-top:4px;margin-bottom:8px}
+.dc-panel-title{display:flex;align-items:center;gap:7px;font-size:.83rem;font-weight:700;margin-bottom:8px;color:var(--text)}
+.dc-panel-desc{font-size:.76rem;color:var(--dim);line-height:1.6;margin-bottom:10px}
+.dc-panel-desc code{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--cyan);background:rgba(6,182,212,.1);padding:1px 4px;border-radius:3px}
+.qs-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.rel-link{display:inline-flex;align-items:center;gap:5px;font-size:.75rem;color:var(--dim);text-decoration:none;transition:color 180ms}
+.rel-link:hover{color:var(--text)}
+.src-note{background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:8px;padding:12px 16px;font-size:.78rem;color:var(--dim);line-height:1.6;margin-bottom:14px}
+.src-note strong{color:var(--amber)}
 
 /* ── ⑥ COMPARE ── */
 #compare{background:var(--bg2)}
@@ -253,9 +295,9 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     <span>Security</span>
   </button>
-  <button class="npill" data-target="deploy" aria-label="Go to Deploy">
-    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-    <span>Deploy</span>
+  <button class="npill" data-target="deploy" aria-label="Go to Install">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    <span>Install</span>
   </button>
   <button class="npill" data-target="compare" aria-label="Go to Compare">
     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -507,111 +549,225 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 <div class="gline"></div>
 
 <!-- ══════════════════════════════ -->
-<!-- ⑤  DEPLOY                    -->
+<!-- ⑤  DEPLOY / INSTALL          -->
 <!-- ══════════════════════════════ -->
-<section id="deploy" class="sect" aria-label="Deploy">
+<section id="deploy" class="sect" aria-label="Install">
   <div class="sect-wrap">
-    <div class="g2" style="align-items:start;gap:40px">
-      <div class="rev-l">
-        <div class="stag">Quick Deploy</div>
-        <h2 class="stitle">Running in 2 minutes</h2>
-        <p class="ssub" style="margin-bottom:24px">Docker Compose brings up PostgreSQL, Go server, and React UI in one command. Auto-migrates on start.</p>
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <div class="dstep"><div class="dnum">1</div><div><div class="dt">Configure &amp; start</div><div class="dd">Set <code style="font-family:'JetBrains Mono',monospace;font-size:.72rem">NEXSPENCE_BOOTSTRAP_ADMIN_PASSWORD</code> and run <code style="font-family:'JetBrains Mono',monospace;font-size:.72rem">docker compose up</code>. Migrations run automatically on start.</div></div></div>
-          <div class="dstep"><div class="dnum">2</div><div><div class="dt">Open the UI</div><div class="dd">Web UI &amp; REST API at <code style="font-family:'JetBrains Mono',monospace;font-size:.72rem">http://localhost:8081</code>. Docker registry on port <code style="font-family:'JetBrains Mono',monospace;font-size:.72rem">5000</code>. Login: <code style="font-family:'JetBrains Mono',monospace;font-size:.72rem">admin / changeme</code>.</div></div></div>
-          <div class="dstep"><div class="dnum">3</div><div><div class="dt">Create repositories</div><div class="dd">Create Hosted / Proxy / Group repos for each format. 100% Nexus API compatible — no client-side tool changes needed.</div></div></div>
-          <div class="dstep"><div class="dnum">4</div><div><div class="dt">Migrate from Nexus (optional)</div><div class="dd"><code style="font-family:'JetBrains Mono',monospace;font-size:.72rem">nexspence migrate --source https://nexus.example.com --user admin --pass xxx</code></div></div></div>
-        </div>
-        <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
-          <a href="https://github.com/skensell201/nexspence" target="_blank" rel="noopener" class="btn btn-primary">
-            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            View on GitHub
-          </a>
-          <a href="#compare" class="btn btn-ghost">See comparison →</a>
+    <div class="rev" style="text-align:center;margin-bottom:32px">
+      <div class="stag" style="justify-content:center">Install</div>
+      <h2 class="stitle">Up and running in 2 minutes</h2>
+      <p class="ssub" style="margin:0 auto">Choose your deployment method. Docker Compose for a quick local start; Helm for production Kubernetes.</p>
+    </div>
+
+    <!-- Download card -->
+    <div class="dl-card rev">
+      <div class="dl-card-left">
+        <div class="dl-icon">📦</div>
+        <div>
+          <div class="dl-title">Download the latest release</div>
+          <div class="dl-sub">Pre-packaged with <code>docker-compose.yml</code> and <code>config.yaml</code> — unpack and run</div>
         </div>
       </div>
-      <div class="rev-r" style="display:flex;flex-direction:column;gap:14px">
-        <div class="cblock">
-          <div class="chdr"><div class="cdot" style="background:#ef4444"></div><div class="cdot" style="background:#f59e0b"></div><div class="cdot" style="background:#22c55e"></div><div class="ctitle">docker-compose.yml</div></div>
-          <div class="cbody"><span class="ck">services</span>:
-  <span class="cn">postgres</span>:
-    <span class="ck">image</span>: <span class="cs">postgres:16-alpine</span>
-    <span class="ck">environment</span>:
-      <span class="cn">POSTGRES_USER</span>: <span class="cs">nexspence</span>
-      <span class="cn">POSTGRES_PASSWORD</span>: <span class="cs">nexspence</span>
-      <span class="cn">POSTGRES_DB</span>: <span class="cs">nexspence</span>
-    <span class="ck">ports</span>: [<span class="cs">"5437:5432"</span>]
-    <span class="ck">volumes</span>: [<span class="cs">postgres_data:/var/lib/postgresql/data</span>]
+      <a class="btn btn-primary" href="https://github.com/skensell201/nexspence/releases/latest" target="_blank" rel="noopener">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        GitHub Releases →
+      </a>
+    </div>
 
-  <span class="cn">nexspence</span>:
-    <span class="ck">image</span>: <span class="cs">nexspence/nexspence:latest</span>
-    <span class="ck">ports</span>:
-      - <span class="cs">"8081:8081"</span>   <span class="cc"># Web UI &amp; API</span>
-      - <span class="cs">"5000:5000"</span>   <span class="cc"># Docker registry</span>
-    <span class="ck">environment</span>:
-      <span class="cn">NEXSPENCE_DATABASE_DSN</span>: <span class="cs">postgres://nexspence:nexspence@postgres/nexspence</span>
-      <span class="cn">NEXSPENCE_AUTH_JWT_SECRET</span>: <span class="cs">change-me-min-32-chars-long</span>
-      <span class="cn">NEXSPENCE_BOOTSTRAP_ADMIN_PASSWORD</span>: <span class="cs">changeme</span>
-    <span class="ck">depends_on</span>: [<span class="cs">postgres</span>]
+    <!-- Tabs -->
+    <div class="qs-tabs rev">
+      <button class="qt active" onclick="deployTab('dc',this)" aria-label="Docker Compose">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 12h6M12 9v6"/></svg>
+        Docker Compose
+      </button>
+      <button class="qt" onclick="deployTab('helm',this)" aria-label="Helm / Kubernetes">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        Helm / Kubernetes
+      </button>
+      <button class="qt" onclick="deployTab('src',this)" aria-label="From Source">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        From Source
+      </button>
+    </div>
 
-<span class="ck">volumes</span>:
-  <span class="cn">postgres_data</span>:</div>
+    <!-- ── Docker Compose tab ── -->
+    <div id="dtab-dc" class="dtab rev">
+      <div class="qs-steps">
+        <div class="qs-step"><div class="sn">01</div><div><div class="st">Unpack the release</div><div class="sd">Extract the archive: <code>tar -xzf nexspence-v*.tar.gz &amp;&amp; cd nexspence-*</code></div></div></div>
+        <div class="qs-step"><div class="sn">02</div><div><div class="st">Edit config.yaml</div><div class="sd">Change <code>jwt_secret</code> (min 32 chars) and <code>admin_password</code> — everything else works out of the box</div></div></div>
+        <div class="qs-step"><div class="sn">03</div><div><div class="st">Start and open</div><div class="sd">Auto-migrates on first start. Login at <code>localhost:8081</code> — credentials: <code>admin / admin123</code></div></div></div>
+      </div>
+      <div class="cb-wrap">
+        <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cp">$ </span>tar -xzf nexspence-v*.tar.gz &amp;&amp; cd nexspence-*
+<span class="cp">$ </span><span class="cc"># edit config.yaml — change jwt_secret and admin_password</span>
+<span class="cp">$ </span>docker compose up -d<span class="cc">  # starts postgres + nexspence, auto-migrates</span>
+<span class="cp">$ </span>open <span class="cu">http://localhost:8081</span><span class="cc">  # admin / admin123</span></div>
+      </div>
+      <div class="chips">
+        <button class="chip" onclick="togglePanel('dc-minio',this)">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          With MinIO (S3 storage)
+        </button>
+        <button class="chip" onclick="togglePanel('dc-ha',this)">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          HA Cluster
+        </button>
+        <button class="chip" onclick="togglePanel('dc-keycloak',this)">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          With Keycloak SSO
+        </button>
+      </div>
+      <div class="dc-panel" id="dc-minio">
+        <div class="dc-panel-inner">
+          <div class="dc-panel-title"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> With MinIO — S3-compatible storage</div>
+          <p class="dc-panel-desc">MinIO is included in <code>docker-compose.yml</code>. Set the storage type via env var — MinIO API on port 9000, console on 9001.</p>
+          <div class="cb-wrap">
+            <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
+            <div class="cb-body"><span class="cp">$ </span>NEXSPENCE_STORAGE_DEFAULT_TYPE=s3 docker compose up -d
+<span class="cc"># MinIO S3 API:   http://localhost:9000</span>
+<span class="cc"># MinIO console: http://localhost:9001  (minioadmin / minioadmin)</span>
+<span class="cc"># Nexspence UI:  http://localhost:8081</span></div>
+          </div>
         </div>
-        <div class="cblock">
-          <div class="chdr"><div class="cdot" style="background:#ef4444"></div><div class="cdot" style="background:#f59e0b"></div><div class="cdot" style="background:#22c55e"></div><div class="ctitle">config.yaml</div></div>
-          <div class="cbody"><span class="ck">http</span>:
-  <span class="cn">addr</span>: <span class="cs">":8081"</span>
-  <span class="cn">base_url</span>: <span class="cs">"http://localhost:8081"</span>
-  <span class="cn">max_body_mb</span>: <span class="cm">1024</span>
-
-<span class="ck">database</span>:
-  <span class="cn">dsn</span>: <span class="cs">"postgres://nexspence:nexspence@localhost:5437/nexspence?sslmode=disable"</span>
-  <span class="cn">max_conns</span>: <span class="cm">100</span>
-
-<span class="ck">storage</span>:
-  <span class="cn">default_type</span>: <span class="cs">"local"</span>
-  <span class="ck">local</span>:
-    <span class="cn">base_path</span>: <span class="cs">"./data/blobs"</span>
-  <span class="cc"># s3:</span>
-  <span class="cc">#   bucket: "nexspence-blobs"</span>
-  <span class="cc">#   endpoint: "http://minio:9000"</span>
-
-<span class="ck">auth</span>:
-  <span class="cn">jwt_secret</span>: <span class="cs">"change-me-min-32-chars-long"</span>
-  <span class="cn">jwt_expiry_hours</span>: <span class="cm">24</span>
-  <span class="cn">token_max_days</span>: <span class="cm">180</span>
-  <span class="cn">anonymous_enabled</span>: <span class="cm">true</span>
-
-<span class="ck">bootstrap</span>:
-  <span class="cn">admin_username</span>: <span class="cs">"admin"</span>
-  <span class="cn">admin_password</span>: <span class="cs">"changeme"</span>   <span class="cc"># change this!</span>
-  <span class="cn">admin_email</span>: <span class="cs">"admin@example.com"</span>
-
-<span class="ck">cleanup</span>:
-  <span class="cn">default_schedule</span>: <span class="cs">"0 */6 * * *"</span>  <span class="cc"># every 6 h</span>
-
-<span class="ck">audit</span>:
-  <span class="cn">retention_days</span>: <span class="cm">90</span>
-
-<span class="cc"># ldap / oidc: disabled by default — see docs</span></div>
+      </div>
+      <div class="dc-panel" id="dc-ha">
+        <div class="dc-panel-inner">
+          <div class="dc-panel-title"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> HA Cluster — High Availability</div>
+          <p class="dc-panel-desc">Uses <code>docker-compose.ha.yml</code>: 2 × Nexspence nodes, nginx load balancer (<code>least_conn</code>), Redis, MinIO, PostgreSQL.</p>
+          <div class="cb-wrap">
+            <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
+            <div class="cb-body"><span class="cp">$ </span>docker compose -f docker-compose.ha.yml up -d
+<span class="cc"># 2 × Nexspence + nginx LB + Redis + MinIO + PostgreSQL</span>
+<span class="cc"># Load balancer: http://localhost:8080</span></div>
+          </div>
         </div>
-        <div class="cblock">
-          <div class="chdr"><div class="cdot" style="background:#ef4444"></div><div class="cdot" style="background:#f59e0b"></div><div class="cdot" style="background:#22c55e"></div><div class="ctitle">client configs</div></div>
-          <div class="cbody"><span class="cc"># Maven</span>
-<span class="cm">&lt;url&gt;</span><span class="cs">http://localhost:8081/repository/maven-releases</span><span class="cm">&lt;/url&gt;</span>
-
-<span class="cc"># npm</span>
-<span class="cn">npm</span> <span class="ck">config set registry</span> <span class="cs">http://localhost:8081/repository/npm-proxy</span>
-
-<span class="cc"># Docker  (dedicated port 5000)</span>
-<span class="cn">docker</span> <span class="ck">pull</span> <span class="cs">localhost:5000/my-image:latest</span>
-
-<span class="cc"># Helm</span>
-<span class="cn">helm</span> <span class="ck">repo add</span> nx <span class="cs">http://localhost:8081/repository/helm-hosted</span>
-
-<span class="cc"># Go modules</span>
-<span class="cn">GOPROXY</span>=<span class="cs">http://localhost:8081/repository/go-proxy</span></div>
+      </div>
+      <div class="dc-panel" id="dc-keycloak">
+        <div class="dc-panel-inner">
+          <div class="dc-panel-title"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> With Keycloak SSO</div>
+          <p class="dc-panel-desc">Starts a pre-configured Keycloak dev instance with the <code>nexspence</code> realm imported. "Sign in with Keycloak" appears on the login page.</p>
+          <div class="cb-wrap">
+            <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
+            <div class="cb-body"><span class="cp">$ </span>OIDC_ENABLED=true docker compose --profile keycloak up -d
+<span class="cc"># Nexspence UI:    http://localhost:8081</span>
+<span class="cc"># Keycloak admin: http://localhost:8180  (admin / admin)</span>
+<span class="cc"># Test user:      testuser / testpass  →  nx-admin role</span></div>
+          </div>
         </div>
+      </div>
+      <div class="qs-bot">
+        <div class="chips" style="margin-bottom:0">
+          <a class="chip" href="https://github.com/skensell201/nexspence" target="_blank" rel="noopener">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <a class="rel-link" href="https://github.com/skensell201/nexspence/releases" target="_blank" rel="noopener">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          All releases &amp; changelogs →
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Helm / Kubernetes tab ── -->
+    <div id="dtab-helm" class="dtab dtab-hide">
+      <div class="src-note">
+        <strong>Requirements:</strong> Helm 3.x · Kubernetes ≥ 1.26. Image <code style="font-family:'JetBrains Mono',monospace;font-size:.7rem">ghcr.io/nexspence-oss/nexspence</code> is pulled automatically from GitHub Container Registry.
+      </div>
+      <div style="font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);margin-bottom:8px">NETWORKING OPTION</div>
+      <div class="chips" style="margin-bottom:16px">
+        <button class="chip helm-chip on" onclick="switchHelm('nginx',this)">nginx</button>
+        <button class="chip helm-chip" onclick="switchHelm('traefik',this)">traefik</button>
+        <button class="chip helm-chip" onclick="switchHelm('cilium-ingress',this)">cilium-ingress</button>
+        <button class="chip helm-chip" onclick="switchHelm('istio',this)">istio-gateway</button>
+        <button class="chip helm-chip" onclick="switchHelm('cilium-gw',this)">cilium-gateway</button>
+      </div>
+      <div class="cb-wrap helm-code" id="helm-nginx">
+        <div class="cb-bar"><span>shell — nginx ingress</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+    -f deploy/helm/nexspence/values-examples/nginx.yaml \
+    --set config.jwtSecret="$(openssl rand -hex 32)" \
+    --set config.adminPassword="changeme" \
+    --namespace nexspence --create-namespace</div>
+      </div>
+      <div class="cb-wrap helm-code" id="helm-traefik" style="display:none">
+        <div class="cb-bar"><span>shell — traefik ingress (HTTPS)</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+    -f deploy/helm/nexspence/values-examples/traefik.yaml \
+    --set config.jwtSecret="$(openssl rand -hex 32)" \
+    --set config.adminPassword="changeme" \
+    --namespace nexspence --create-namespace
+<span class="cc"># Routes via websecure entrypoint + TLS secret nexspence-tls</span></div>
+      </div>
+      <div class="cb-wrap helm-code" id="helm-cilium-ingress" style="display:none">
+        <div class="cb-bar"><span>shell — cilium ingress-controller</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cc"># Requires: Cilium ≥ 1.12 with ingress controller enabled</span>
+<span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+    -f deploy/helm/nexspence/values-examples/cilium-ingress.yaml \
+    --set config.jwtSecret="$(openssl rand -hex 32)" \
+    --set config.adminPassword="changeme" \
+    --namespace nexspence --create-namespace</div>
+      </div>
+      <div class="cb-wrap helm-code" id="helm-istio" style="display:none">
+        <div class="cb-bar"><span>shell — istio gateway + virtual service</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cc"># Requires: istioctl install --set profile=default</span>
+<span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+    -f deploy/helm/nexspence/values-examples/istio-gateway.yaml \
+    --set config.jwtSecret="$(openssl rand -hex 32)" \
+    --set config.adminPassword="changeme" \
+    --namespace nexspence --create-namespace</div>
+      </div>
+      <div class="cb-wrap helm-code" id="helm-cilium-gw" style="display:none">
+        <div class="cb-bar"><span>shell — cilium K8s Gateway API</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cc"># Requires: Cilium ≥ 1.14, K8s Gateway API CRDs installed</span>
+<span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+    -f deploy/helm/nexspence/values-examples/cilium-gateway.yaml \
+    --set config.jwtSecret="$(openssl rand -hex 32)" \
+    --set config.adminPassword="changeme" \
+    --namespace nexspence --create-namespace</div>
+      </div>
+      <div class="qs-bot" style="margin-top:14px">
+        <a class="chip" href="https://github.com/skensell201/nexspence/blob/main/deploy/helm/nexspence/README.md" target="_blank" rel="noopener">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Full Helm reference →
+        </a>
+        <a class="rel-link" href="https://github.com/skensell201/nexspence/releases" target="_blank" rel="noopener">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          All releases &amp; changelogs →
+        </a>
+      </div>
+    </div>
+
+    <!-- ── From Source tab ── -->
+    <div id="dtab-src" class="dtab dtab-hide">
+      <div class="src-note">
+        <strong>Requirements:</strong> Go 1.22+ · Node.js 22+ · PostgreSQL 16+
+      </div>
+      <div class="qs-steps" style="margin-bottom:16px">
+        <div class="qs-step"><div class="sn">01</div><div><div class="st">Clone and start PostgreSQL</div><div class="sd"><code>git clone https://github.com/skensell201/nexspence &amp;&amp; cd nexspence</code></div></div></div>
+        <div class="qs-step"><div class="sn">02</div><div><div class="st">Run the backend</div><div class="sd">Auto-migrates on start — <code>go run ./cmd/server serve</code></div></div></div>
+        <div class="qs-step"><div class="sn">03</div><div><div class="st">Run the frontend dev server</div><div class="sd"><code>cd frontend &amp;&amp; npm ci &amp;&amp; npm run dev</code> — hot-reload on :5173</div></div></div>
+      </div>
+      <div class="cb-wrap">
+        <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
+        <div class="cb-body"><span class="cp">$ </span>git clone https://github.com/skensell201/nexspence &amp;&amp; cd nexspence
+<span class="cp">$ </span>docker compose up -d db<span class="cc">        # PostgreSQL only</span>
+<span class="cp">$ </span>go run ./cmd/server serve<span class="cc">     # API + migrations → :8081</span>
+<span class="cc"># in another terminal:</span>
+<span class="cp">$ </span>cd frontend &amp;&amp; npm ci &amp;&amp; npm run dev<span class="cc">  # dev server → :5173</span></div>
+      </div>
+      <div class="qs-bot">
+        <div class="chips" style="margin-bottom:0">
+          <a class="chip" href="https://github.com/skensell201/nexspence" target="_blank" rel="noopener">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <a class="rel-link" href="https://github.com/skensell201/nexspence/releases" target="_blank" rel="noopener">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          All releases &amp; changelogs →
+        </a>
       </div>
     </div>
   </div>
@@ -678,8 +834,10 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
     <a href="#formats">Formats</a>
     <a href="#architecture">Architecture</a>
     <a href="#security">Security</a>
-    <a href="#deploy">Deploy</a>
+    <a href="#deploy">Install</a>
+    <a href="#compare">vs Nexus</a>
     <a href="https://github.com/skensell201/nexspence" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/skensell201/nexspence/releases" target="_blank" rel="noopener">Releases</a>
   </div>
 </footer>
 
@@ -737,6 +895,33 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
   },{threshold:.6});
   document.querySelectorAll('[data-count]').forEach(el=>io.observe(el));
 })();
+
+// ── Deploy tabs ───────────────────────────────────────────────
+function deployTab(id, btn) {
+  document.querySelectorAll('.qt').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.dtab').forEach(p => p.classList.add('dtab-hide'));
+  btn.classList.add('active');
+  document.getElementById('dtab-' + id).classList.remove('dtab-hide');
+}
+function togglePanel(id, btn) {
+  const panel = document.getElementById(id);
+  const isOpen = panel.classList.contains('open');
+  document.querySelectorAll('.dc-panel').forEach(p => p.classList.remove('open'));
+  document.querySelectorAll('.chips button.chip').forEach(b => b.classList.remove('active'));
+  if (!isOpen) { panel.classList.add('open'); btn.classList.add('active'); }
+}
+function switchHelm(id, btn) {
+  document.querySelectorAll('.helm-code').forEach(c => c.style.display = 'none');
+  document.querySelectorAll('.helm-chip').forEach(b => b.classList.remove('on'));
+  document.getElementById('helm-' + id).style.display = 'block';
+  btn.classList.add('on');
+}
+function copyBlock(btn) {
+  const text = btn.closest('.cb-wrap').querySelector('.cb-body').innerText;
+  navigator.clipboard.writeText(text).catch(() => {});
+  btn.textContent = 'Copied!';
+  setTimeout(() => btn.textContent = 'Copy', 2000);
+}
 
 // ── Floating nav highlight on scroll ─────────────────────────
 (function(){
