@@ -177,6 +177,8 @@ redis:
   addr: "redis:6379"
 ```
 
+See [`docs/ha-setup.md`](https://github.com/nexspence-oss/nexspence/blob/main/docs/ha-setup.md) for the full HA guide including Kubernetes probe examples.
+
 ### Variant: With Keycloak SSO
 
 Starts a pre-configured Keycloak dev instance with the `nexspence` realm imported. "Sign in with Keycloak" appears on the login page automatically.
@@ -204,6 +206,8 @@ oidc:
   redirect_url: "http://localhost:8081/api/v1/auth/oidc/callback"
   frontend_base_url: "http://localhost:8081"
 ```
+
+See [`docs/oidc-setup.md`](https://github.com/nexspence-oss/nexspence/blob/main/docs/oidc-setup.md) for provider-specific setup guides (Keycloak, Google, Entra, Okta).
 
 ---
 
@@ -517,7 +521,7 @@ redis:
 - **Full-text search** — PostgreSQL tsvector across components and assets
 - **Browse UI** — tree view for raw and Docker repositories; file details with download, copy-link, usage examples
 - **Audit log** — every API action logged; filterable by date/user/path; NDJSON streaming export; 90-day partition rotation
-- **Webhooks** — `artifact.published`, `artifact.deleted`, `repo.created`, `repo.updated`, `repo.deleted`, `promotion.*` events; HMAC-SHA256 signatures
+- **Webhooks** — `artifact.published`, `artifact.deleted`, `repo.created`, `repo.updated`, `repo.deleted`, `promotion.*` events; HMAC-SHA256 signatures; see [`docs/webhooks.md`](https://github.com/nexspence-oss/nexspence/blob/main/docs/webhooks.md)
 - **Vulnerability scanning** — Trivy (Docker images) + OSV.dev (Maven/npm/PyPI/Cargo); CVE results cached; aggregated dashboard with bulk re-scan
 - **In-app documentation** — `/docs` route with Getting Started guide, 14 format reference pages, 7 how-to guides
 - **Dark glassmorphism UI** — sidebar collapse/expand; tabbed admin pages; wizard-style create flows; responsive
