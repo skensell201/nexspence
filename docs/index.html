@@ -266,8 +266,37 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 .fd{font-size:.77rem;color:var(--dim);line-height:1.62}
 
 /* ── Responsive ── */
-@media(max-width:768px){.hero-right{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}.floatnav .npill span{display:none}.nav-deploy span{display:none}}
-@media(max-width:580px){.nav-gh span{display:none}}
+@media(max-width:768px){
+  .hero-right{display:none}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .floatnav .npill span{display:none}
+  .nav-deploy span{display:none}
+  .g2{grid-template-columns:1fr}
+  .dl-card{flex-direction:column;align-items:flex-start;gap:14px}
+  .dl-card .btn{width:100%;justify-content:center}
+  .arch .albl{min-width:80px;font-size:.6rem}
+  .achip{font-size:.65rem}
+  .sect-wrap{padding:60px 16px 40px}
+  .stitle{font-size:clamp(1.5rem,5vw,2.4rem)}
+}
+@media(max-width:580px){
+  .nav-gh span{display:none}
+  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .qs-tabs{gap:4px}
+  .qt{padding:7px 12px;font-size:.74rem}
+  .cb-body{font-size:.68rem}
+  .chips{gap:4px}
+  .chip{font-size:.68rem;padding:4px 10px}
+  .ctable{font-size:.74rem}
+  .ctable th,.ctable td{padding:9px 10px}
+  .dl-card-left{flex-direction:column;gap:8px}
+}
+@media(max-width:400px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .floatnav{padding:4px}
+  .npill{padding:4px 8px}
+}
 @media(prefers-reduced-motion:reduce){.rev,.rev-l,.rev-r{transition:none;opacity:1;transform:none}.hero-logo{animation:none}}
 </style>
 </head>
@@ -435,20 +464,20 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
       <p class="ssub" style="margin:0 auto">Every format supports Hosted, Proxy, and Group types. One URL for your entire organization.</p>
     </div>
     <div class="g4">
-      <div class="card fmcard rev"><div class="fmicon" style="background:rgba(192,57,43,.12);color:#c0392b">M2</div><div class="fmname">Maven</div><div class="fmproto">Maven 2/3</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
-      <div class="card fmcard rev d1"><div class="fmicon" style="background:rgba(204,53,52,.12);color:#cb3837">npm</div><div class="fmname">npm</div><div class="fmproto">Registry v1</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
-      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(36,150,237,.12);color:#2496ed"><svg width="22" height="22" fill="#2496ed" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.186.186 0 0 0-.186.185v1.888c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.082.185.184.185"/></svg></div><div class="fmname">Docker</div><div class="fmproto">OCI Distrib. v2</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
-      <div class="card fmcard rev d3"><div class="fmicon" style="background:rgba(55,118,171,.12);color:#3776ab">Py</div><div class="fmname">PyPI</div><div class="fmproto">Simple Index</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
-      <div class="card fmcard rev d1"><div class="fmicon" style="background:rgba(0,173,216,.12);color:#00add8">Go</div><div class="fmname">Go Modules</div><div class="fmproto">GOPROXY v2</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
-      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(0,72,128,.12);color:#5ba8db">Nu</div><div class="fmname">NuGet</div><div class="fmproto">v2 OData / v3</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
-      <div class="card fmcard rev d3"><div class="fmicon" style="background:rgba(39,122,159,.12);color:#277a9f"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#277a9f" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></div><div class="fmname">Helm</div><div class="fmproto">Chart Repo</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
-      <div class="card fmcard rev d4"><div class="fmicon" style="background:rgba(206,66,43,.12);color:#ce422b">Rs</div><div class="fmname">Cargo</div><div class="fmproto">Sparse Index</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
-      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(168,0,48,.12);color:#e05574">deb</div><div class="fmname">Apt</div><div class="fmproto">Debian Packages</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
-      <div class="card fmcard rev d3"><div class="fmicon" style="background:rgba(238,0,0,.1);color:#ef4444">RPM</div><div class="fmname">Yum / RPM</div><div class="fmproto">repomd.xml</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
-      <div class="card fmcard rev d4"><div class="fmicon" style="background:rgba(139,92,246,.12);color:#8b5cf6">C++</div><div class="fmname">Conan</div><div class="fmproto">Conan v1</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev"><div class="fmicon" style="background:rgba(192,57,43,.12);color:#c0392b"><img src="https://cdn.simpleicons.org/apachemaven/c0392b" width="26" height="26" alt="Maven" style="object-fit:contain"></div><div class="fmname">Maven</div><div class="fmproto">Maven 2/3</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
+      <div class="card fmcard rev d1"><div class="fmicon" style="background:rgba(204,53,52,.12);color:#cb3837"><img src="https://cdn.simpleicons.org/npm/cb3837" width="26" height="26" alt="npm" style="object-fit:contain"></div><div class="fmname">npm</div><div class="fmproto">Registry v1</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
+      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(36,150,237,.12);color:#2496ed"><img src="https://cdn.simpleicons.org/docker/2496ed" width="26" height="26" alt="Docker" style="object-fit:contain"></div><div class="fmname">Docker</div><div class="fmproto">OCI Distrib. v2</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
+      <div class="card fmcard rev d3"><div class="fmicon" style="background:rgba(55,118,171,.12);color:#3776ab"><img src="https://cdn.simpleicons.org/pypi/3776ab" width="26" height="26" alt="PyPI" style="object-fit:contain"></div><div class="fmname">PyPI</div><div class="fmproto">Simple Index</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
+      <div class="card fmcard rev d1"><div class="fmicon" style="background:rgba(0,173,216,.12);color:#00add8"><img src="https://cdn.simpleicons.org/go/00add8" width="26" height="26" alt="Go" style="object-fit:contain"></div><div class="fmname">Go Modules</div><div class="fmproto">GOPROXY v2</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(0,72,128,.12);color:#5ba8db"><img src="https://cdn.simpleicons.org/nuget/5ba8db" width="26" height="26" alt="NuGet" style="object-fit:contain"></div><div class="fmname">NuGet</div><div class="fmproto">v2 OData / v3</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span><span class="ftag t-p">Group</span></div></div>
+      <div class="card fmcard rev d3"><div class="fmicon" style="background:rgba(39,122,159,.12);color:#277a9f"><img src="https://cdn.simpleicons.org/helm/277a9f" width="26" height="26" alt="Helm" style="object-fit:contain"></div><div class="fmname">Helm</div><div class="fmproto">Chart Repo</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d4"><div class="fmicon" style="background:rgba(206,66,43,.12);color:#ce422b"><img src="https://cdn.simpleicons.org/rust/ce422b" width="26" height="26" alt="Cargo" style="object-fit:contain"></div><div class="fmname">Cargo</div><div class="fmproto">Sparse Index</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(168,0,48,.12);color:#e05574"><img src="https://cdn.simpleicons.org/debian/a80030" width="26" height="26" alt="Apt" style="object-fit:contain"></div><div class="fmname">Apt</div><div class="fmproto">Debian Packages</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d3"><div class="fmicon" style="background:rgba(238,0,0,.1);color:#ef4444"><img src="https://cdn.simpleicons.org/redhat/ee0000" width="26" height="26" alt="Yum" style="object-fit:contain"></div><div class="fmname">Yum / RPM</div><div class="fmproto">repomd.xml</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d4"><div class="fmicon" style="background:rgba(139,92,246,.12);color:#8b5cf6"><img src="https://cdn.simpleicons.org/conan/6699cb" width="26" height="26" alt="Conan" style="object-fit:contain"></div><div class="fmname">Conan</div><div class="fmproto">Conan v1</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
       <div class="card fmcard rev d5"><div class="fmicon" style="background:rgba(71,85,105,.12);color:#94a3b8"><svg width="20" height="20" fill="none" stroke="#94a3b8" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div class="fmname">Raw</div><div class="fmproto">PUT/GET/DELETE</div><div class="fmtypes"><span class="ftag t-b">Hosted</span></div></div>
-      <div class="card fmcard rev d1"><div class="fmicon" style="background:rgba(68,168,51,.12);color:#44a833">🐍</div><div class="fmname">Conda</div><div class="fmproto">channel / repodata</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
-      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(123,66,188,.12);color:#7b42bc">TF</div><div class="fmname">Terraform</div><div class="fmproto">Registry Mirror</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d1"><div class="fmicon" style="background:rgba(68,168,51,.12);color:#44a833"><img src="https://cdn.simpleicons.org/anaconda/44a833" width="26" height="26" alt="Conda" style="object-fit:contain"></div><div class="fmname">Conda</div><div class="fmproto">channel / repodata</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
+      <div class="card fmcard rev d2"><div class="fmicon" style="background:rgba(123,66,188,.12);color:#7b42bc"><img src="https://cdn.simpleicons.org/terraform/7b42bc" width="26" height="26" alt="Terraform" style="object-fit:contain"></div><div class="fmname">Terraform</div><div class="fmproto">Registry Mirror</div><div class="fmtypes"><span class="ftag t-b">Hosted</span><span class="ftag t-a">Proxy</span></div></div>
     </div>
   </div>
 </section>
@@ -584,10 +613,6 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
         <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
         Helm / Kubernetes
       </button>
-      <button class="qt" onclick="deployTab('src',this)" aria-label="From Source">
-        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        From Source
-      </button>
     </div>
 
     <!-- ── Docker Compose tab ── -->
@@ -599,10 +624,13 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
       </div>
       <div class="cb-wrap">
         <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cp">$ </span>tar -xzf nexspence-v*.tar.gz &amp;&amp; cd nexspence-*
+        <div class="cb-body"><span class="cp">$ </span>tar -xzf nexspence-v*.tar.gz
+<span class="cp">$ </span>cd nexspence-*
 <span class="cp">$ </span><span class="cc"># edit config.yaml — change jwt_secret and admin_password</span>
-<span class="cp">$ </span>docker compose up -d<span class="cc">  # starts postgres + nexspence, auto-migrates</span>
-<span class="cp">$ </span>open <span class="cu">http://localhost:8081</span><span class="cc">  # admin / admin123</span></div>
+<span class="cp">$ </span>docker compose up -d
+<span class="cc">  # starts postgres + nexspence, auto-migrates on first run</span>
+<span class="cp">$ </span>open <span class="cu">http://localhost:8081</span>
+<span class="cc">  # login: admin / admin123</span></div>
       </div>
       <div class="chips">
         <button class="chip" onclick="togglePanel('dc-minio',this)">
@@ -624,10 +652,13 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
           <p class="dc-panel-desc">MinIO is included in <code>docker-compose.yml</code>. Set the storage type via env var — MinIO API on port 9000, console on 9001.</p>
           <div class="cb-wrap">
             <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
-            <div class="cb-body"><span class="cp">$ </span>NEXSPENCE_STORAGE_DEFAULT_TYPE=s3 docker compose up -d
-<span class="cc"># MinIO S3 API:   http://localhost:9000</span>
-<span class="cc"># MinIO console: http://localhost:9001  (minioadmin / minioadmin)</span>
-<span class="cc"># Nexspence UI:  http://localhost:8081</span></div>
+            <div class="cb-body"><span class="cp">$ </span>NEXSPENCE_STORAGE_DEFAULT_TYPE=s3 \
+    docker compose up -d
+
+<span class="cc"># MinIO S3 API:    http://localhost:9000</span>
+<span class="cc"># MinIO console:  http://localhost:9001</span>
+<span class="cc">#                 minioadmin / minioadmin</span>
+<span class="cc"># Nexspence UI:   http://localhost:8081</span></div>
           </div>
         </div>
       </div>
@@ -637,9 +668,13 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
           <p class="dc-panel-desc">Uses <code>docker-compose.ha.yml</code>: 2 × Nexspence nodes, nginx load balancer (<code>least_conn</code>), Redis, MinIO, PostgreSQL.</p>
           <div class="cb-wrap">
             <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
-            <div class="cb-body"><span class="cp">$ </span>docker compose -f docker-compose.ha.yml up -d
-<span class="cc"># 2 × Nexspence + nginx LB + Redis + MinIO + PostgreSQL</span>
-<span class="cc"># Load balancer: http://localhost:8080</span></div>
+            <div class="cb-body"><span class="cp">$ </span>docker compose \
+    -f docker-compose.ha.yml \
+    up -d
+
+<span class="cc"># 2 × Nexspence + nginx LB (least_conn)</span>
+<span class="cc"># + Redis + MinIO + PostgreSQL</span>
+<span class="cc"># Load balancer:  http://localhost:8080</span></div>
           </div>
         </div>
       </div>
@@ -649,10 +684,17 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
           <p class="dc-panel-desc">Starts a pre-configured Keycloak dev instance with the <code>nexspence</code> realm imported. "Sign in with Keycloak" appears on the login page.</p>
           <div class="cb-wrap">
             <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
-            <div class="cb-body"><span class="cp">$ </span>OIDC_ENABLED=true docker compose --profile keycloak up -d
+            <div class="cb-body"><span class="cp">$ </span>OIDC_ENABLED=true \
+    docker compose \
+    --profile keycloak \
+    up -d
+
 <span class="cc"># Nexspence UI:    http://localhost:8081</span>
-<span class="cc"># Keycloak admin: http://localhost:8180  (admin / admin)</span>
-<span class="cc"># Test user:      testuser / testpass  →  nx-admin role</span></div>
+<span class="cc">#   login: admin / admin123</span>
+<span class="cc"># Keycloak admin:  http://localhost:8180</span>
+<span class="cc">#   login: admin / admin</span>
+<span class="cc"># Test SSO user:   testuser / testpass</span>
+<span class="cc">#   mapped to nx-admin role</span></div>
           </div>
         </div>
       </div>
@@ -685,47 +727,61 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
       </div>
       <div class="cb-wrap helm-code" id="helm-nginx">
         <div class="cb-bar"><span>shell — nginx ingress</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+        <div class="cb-body"><span class="cp">$ </span>helm install nexspence \
+    deploy/helm/nexspence \
     -f deploy/helm/nexspence/values-examples/nginx.yaml \
     --set config.jwtSecret="$(openssl rand -hex 32)" \
     --set config.adminPassword="changeme" \
-    --namespace nexspence --create-namespace</div>
+    --namespace nexspence \
+    --create-namespace</div>
       </div>
       <div class="cb-wrap helm-code" id="helm-traefik" style="display:none">
         <div class="cb-bar"><span>shell — traefik ingress (HTTPS)</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+        <div class="cb-body"><span class="cp">$ </span>helm install nexspence \
+    deploy/helm/nexspence \
     -f deploy/helm/nexspence/values-examples/traefik.yaml \
     --set config.jwtSecret="$(openssl rand -hex 32)" \
     --set config.adminPassword="changeme" \
-    --namespace nexspence --create-namespace
-<span class="cc"># Routes via websecure entrypoint + TLS secret nexspence-tls</span></div>
+    --namespace nexspence \
+    --create-namespace
+<span class="cc"># Routes via websecure entrypoint</span>
+<span class="cc"># TLS secret: nexspence-tls</span></div>
       </div>
       <div class="cb-wrap helm-code" id="helm-cilium-ingress" style="display:none">
         <div class="cb-bar"><span>shell — cilium ingress-controller</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cc"># Requires: Cilium ≥ 1.12 with ingress controller enabled</span>
-<span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+        <div class="cb-body"><span class="cc"># Requires: Cilium ≥ 1.12</span>
+<span class="cc">#   with ingress controller enabled</span>
+<span class="cp">$ </span>helm install nexspence \
+    deploy/helm/nexspence \
     -f deploy/helm/nexspence/values-examples/cilium-ingress.yaml \
     --set config.jwtSecret="$(openssl rand -hex 32)" \
     --set config.adminPassword="changeme" \
-    --namespace nexspence --create-namespace</div>
+    --namespace nexspence \
+    --create-namespace</div>
       </div>
       <div class="cb-wrap helm-code" id="helm-istio" style="display:none">
         <div class="cb-bar"><span>shell — istio gateway + virtual service</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cc"># Requires: istioctl install --set profile=default</span>
-<span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+        <div class="cb-body"><span class="cc"># Requires: istioctl install \</span>
+<span class="cc">#   --set profile=default</span>
+<span class="cp">$ </span>helm install nexspence \
+    deploy/helm/nexspence \
     -f deploy/helm/nexspence/values-examples/istio-gateway.yaml \
     --set config.jwtSecret="$(openssl rand -hex 32)" \
     --set config.adminPassword="changeme" \
-    --namespace nexspence --create-namespace</div>
+    --namespace nexspence \
+    --create-namespace</div>
       </div>
       <div class="cb-wrap helm-code" id="helm-cilium-gw" style="display:none">
         <div class="cb-bar"><span>shell — cilium K8s Gateway API</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cc"># Requires: Cilium ≥ 1.14, K8s Gateway API CRDs installed</span>
-<span class="cp">$ </span>helm install nexspence deploy/helm/nexspence \
+        <div class="cb-body"><span class="cc"># Requires: Cilium ≥ 1.14</span>
+<span class="cc">#   K8s Gateway API CRDs installed</span>
+<span class="cp">$ </span>helm install nexspence \
+    deploy/helm/nexspence \
     -f deploy/helm/nexspence/values-examples/cilium-gateway.yaml \
     --set config.jwtSecret="$(openssl rand -hex 32)" \
     --set config.adminPassword="changeme" \
-    --namespace nexspence --create-namespace</div>
+    --namespace nexspence \
+    --create-namespace</div>
       </div>
       <div class="qs-bot" style="margin-top:14px">
         <a class="chip" href="https://github.com/skensell201/nexspence/blob/main/deploy/helm/nexspence/README.md" target="_blank" rel="noopener">
@@ -739,37 +795,6 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
       </div>
     </div>
 
-    <!-- ── From Source tab ── -->
-    <div id="dtab-src" class="dtab dtab-hide">
-      <div class="src-note">
-        <strong>Requirements:</strong> Go 1.22+ · Node.js 22+ · PostgreSQL 16+
-      </div>
-      <div class="qs-steps" style="margin-bottom:16px">
-        <div class="qs-step"><div class="sn">01</div><div><div class="st">Clone and start PostgreSQL</div><div class="sd"><code>git clone https://github.com/skensell201/nexspence &amp;&amp; cd nexspence</code></div></div></div>
-        <div class="qs-step"><div class="sn">02</div><div><div class="st">Run the backend</div><div class="sd">Auto-migrates on start — <code>go run ./cmd/server serve</code></div></div></div>
-        <div class="qs-step"><div class="sn">03</div><div><div class="st">Run the frontend dev server</div><div class="sd"><code>cd frontend &amp;&amp; npm ci &amp;&amp; npm run dev</code> — hot-reload on :5173</div></div></div>
-      </div>
-      <div class="cb-wrap">
-        <div class="cb-bar"><span>shell</span><button onclick="copyBlock(this)">Copy</button></div>
-        <div class="cb-body"><span class="cp">$ </span>git clone https://github.com/skensell201/nexspence &amp;&amp; cd nexspence
-<span class="cp">$ </span>docker compose up -d db<span class="cc">        # PostgreSQL only</span>
-<span class="cp">$ </span>go run ./cmd/server serve<span class="cc">     # API + migrations → :8081</span>
-<span class="cc"># in another terminal:</span>
-<span class="cp">$ </span>cd frontend &amp;&amp; npm ci &amp;&amp; npm run dev<span class="cc">  # dev server → :5173</span></div>
-      </div>
-      <div class="qs-bot">
-        <div class="chips" style="margin-bottom:0">
-          <a class="chip" href="https://github.com/skensell201/nexspence" target="_blank" rel="noopener">
-            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            View on GitHub
-          </a>
-        </div>
-        <a class="rel-link" href="https://github.com/skensell201/nexspence/releases" target="_blank" rel="noopener">
-          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-          All releases &amp; changelogs →
-        </a>
-      </div>
-    </div>
   </div>
 </section>
 
